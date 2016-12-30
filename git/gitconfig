@@ -1,0 +1,9 @@
+[user]
+	name = Cosmin Ioan Cimpoi
+	email = cosmin.cimpoi@gmail.com
+[alias]
+	g = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s%Cgreen (%an, %cr)%Creset' --abbrev-commit --date=relative --color
+	s = status -s
+
+[core]
+	excludesfile = /Users/cosmin/.gitignore_global
