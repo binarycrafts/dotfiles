@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "\n"
+echo "Han:"
+curl -s http://www.hanul-dacilor.ro/fCMSBackend/ --data-binary '<content action="get" path="_level0.body_mc.contentContainer_mc.smc_mc.container_mc.ro_menu104" />' |  hxnormalize -x | hxunent | hxuncdata | hxunent | html2text | tail -n +3 | sed '$d' | sed -e 's/^[ \t]*//'
+
+echo "\n"
+echo "Engels:"
+curl -s http://www.engelsbistro.ro/ | hxnormalize -x | hxselect "#meniu-zi" | hxselect -c "li" | sed -e 's/^[ \t]*//'
+
+echo "\n"
+echo "Pofta buna!"
+echo "\n"
