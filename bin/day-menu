@@ -14,7 +14,6 @@ curl -s https://www.wallflux.com/atom/340715752675747 | grep -A 3 -oE "$(date +"
 
 echo "\n"
 echo "Engels:"
-#curl -s http://www.engelsbistro.ro/ | hxnormalize -x | hxselect "#meniu-zi" | hxselect -c "li" | sed -e 's/^[ \t]*//'
 curl -s https://twitter.com/meniulaengels | grep -A 3 -oE "$(date +"%d.%m.%Y")" | tail -2
 
 echo "\n"
