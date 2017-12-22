@@ -1,3 +1,7 @@
+"
+" Custom local config for github.com/tlhunter/vimrc
+"
+
 set confirm
 set guifont=Inconsolata:h14
 set tabstop=4
@@ -19,3 +23,4 @@ endif
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
