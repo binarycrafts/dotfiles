@@ -9,6 +9,7 @@ set expandtab
 set shiftwidth=4
 set noswapfile
 set nowrap
+set cursorcolumn
 
 " The Silver Searcher
 if executable('ag')
