@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#
+# Quick reminder in x minutes
+#
+
+delay="delay $1*60"
+shift
+alert="display alert \"$@\""
+
+( osascript -e "$delay" -e "$alert" > /dev/null 2>&1 & )
